@@ -1,0 +1,7 @@
+/target
+/src/packed.zip
+/resources/client.exe
+/debug/
+/*.exe
+/Cargo.lock
+/*.ini

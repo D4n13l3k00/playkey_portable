@@ -1,0 +1,25 @@
+[package]
+name = "playkey_portable"
+version = "1.0.0"
+edition = "2021"
+authors = ["D4n13l3k00"]
+
+[dependencies]
+crossterm = "0.23.0"
+uuid = { version = "0.8", features = ["serde", "v4"] }
+zip = "0.5"
+ctrlc = "3.2.1"
+regex = "1.5.4"
+reqwest = { version = "0.11.9", features = ["blocking", "json"] }
+serde = "1.0.136"
+serde_json = "1.0.79"
+serde_derive = "1.0.136"
+rust-ini = "0.17.0"
+
+[build-dependencies]
+winres = "0.1.12"
+zip = "0.5"
+
+[profile.release]
+opt-level = "z"
+lto = true
